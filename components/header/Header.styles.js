@@ -18,6 +18,7 @@ export const H1 = styled.h1`
   margin: 0 auto;
   width: 100%;
   text-align: center;
+  font-weight: 300;
 `;
 
 export const LinkContainer = styled.div`
