@@ -1,53 +1,94 @@
 import styled from "styled-components";
-import { ShoppingBag } from "@styled-icons/heroicons-outline/ShoppingBag";
-// import { InstagramAlt } from "@@styled-icons/boxicons-logos/InstagramAlt";
+import { Instagram } from "@styled-icons/remix-fill/Instagram";
+import { Twitter } from "@styled-icons/remix-fill/Twitter";
+import { Facebook } from "@styled-icons/remix-fill/Facebook";
+import { Envelope } from "@styled-icons/zondicons/Envelope";
 
-import { Menu } from "@styled-icons/feather/Menu";
 import { Link } from "@styled-icons/heroicons-outline/Link";
 
 export const StyledFooter = styled.footer`
   position: absolute;
   width: 100%;
-  height: 56px;
+  height: 146px;
   left: 0px;
   bottom: 0px;
   background: #121212;
   color: #fff;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
+// containers
 export const LinkContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   width: 15%;
   @media (max-width: 768px) {
-    display: none;
+    width: 60%;
+    justify-content: space-evenly;
   }
-`;
-
-export const StyledLink = styled.a`
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.7em;
 `;
 
 export const IconContainer = styled.div`
   display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  margin: 2% auto;
+  @media (max-width: 768px) {
+    width: 60%;
+    margin: 5% auto;
+  }
 `;
 
+// link
+export const StyledLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.7em;
+  @media (max-width: 768px) {
+    font-size: 0.5em;
+  }
+`;
+
+// icons
 export const LinkIcon = styled(Link)`
-  height: 15px;
+  height: 0.75em;
   background: #fff;
   color: #121212;
   border-radius: 50%;
   padding: 1%;
 `;
-// export const StyledInstaIcon = styled(InstagramAlt)`
-//   height: 15px;
-//   background: #fff;
-//   color: #121212;
-//   border-radius: 50%;
-//   padding: 1%;
-// `;
+
+export const TwitterIcon = styled(Twitter)`
+  height: 0.75em;
+  background: #fff;
+  color: #121212;
+  border-radius: 50%;
+  padding: 1%;
+`;
+
+export const InstagramIcon = styled(Instagram)`
+  height: 0.75em;
+  background: #fff;
+  color: #121212;
+  border-radius: 50%;
+  padding: 1%;
+`;
+
+export const FacebookIcon = styled(Facebook)`
+  height: 0.75em;
+  background: #fff;
+  color: #121212;
+  border-radius: 50%;
+  padding: 1%;
+`;
+
+export const EmailIcon = styled(Envelope)`
+  height: 0.75em;
+  background: #fff;
+  color: #121212;
+  border-radius: 50%;
+  padding: 1%;
+`;
