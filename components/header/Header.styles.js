@@ -15,11 +15,13 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
 `;
 
-export const H1 = styled.h1`
+export const P = styled.p`
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  font-weight: 300;
+  font-size: 1.75em;
+  font-weight: bold;
+  letter-spacing: 5px;
 `;
 
 export const LinkContainer = styled.div`

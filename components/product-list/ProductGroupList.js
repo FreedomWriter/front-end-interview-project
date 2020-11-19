@@ -37,12 +37,6 @@ function ProductGroupList() {
   return (
     <>
       {productGroups.map((productGroup) => {
-        {
-          /* console.log("dhfadha: ", productGroup)
-        return (
-          <ProductGroup key={productGroup.id} productGroup={productGroup} />
-        ); */
-        }
         if (productGroup.products.length > 0) {
           return (
             <ProductGroup key={productGroup.id} productGroup={productGroup} />

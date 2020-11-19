@@ -1,7 +1,7 @@
 import React from "react";
 import {
   StyledHeader,
-  H1,
+  P,
   Hamburger,
   Icon,
   LinkContainer,
@@ -16,7 +16,7 @@ export default function Header() {
         <Link>Stores</Link>
         <Link>Contact Us</Link>
       </LinkContainer>
-      <H1>FOXTROT</H1>
+      <P>FOXTROT</P>
       <Icon />
     </StyledHeader>
   );

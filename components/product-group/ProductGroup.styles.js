@@ -8,6 +8,12 @@ export const Section = styled.section`
   h3 {
     margin: 2%;
   }
+  @media (max-width: 768px) {
+    width: 90%;
+    h3 {
+      margin: 5%;
+    }
+  }
 `;
 
 export const Div = styled.div`
@@ -16,4 +22,7 @@ export const Div = styled.div`
   height: 500px;
   margin: 0 auto;
   flex-flow: row wrap;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
 `;

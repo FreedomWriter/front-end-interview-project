@@ -6,7 +6,7 @@ export const HeroSection = styled.section`
   display: flex;
   justify-content: center;
 
-  h2 {
+  h1 {
     font-size: 1.75rem;
   }
 

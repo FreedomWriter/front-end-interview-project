@@ -7,7 +7,7 @@ export default function Hero() {
     <HeroSection>
       <HeroImage src={require("../../assets/hero.jpg")} />
       <HeroText>
-        <h2>Discover Aisle</h2>
+        <h1>Discover Aisle</h1>
         <p>
           Lorem ipsum dolor sit amet,
           <br /> consectetur adipiscing elit,sed do eiusmod
