@@ -19,6 +19,9 @@ export const HeroSection = styled.section`
 
 export const HeroImage = styled.img`
   max-width: 100%;
+  width: 387px;
+  height: 185px;
+  align-self: center;
 `;
 
 export const HeroText = styled.div`

@@ -14,7 +14,8 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     main {
-        margin-bottom: 146px;
+        margin: 0 auto 146px;
+        
     }
 
 `;

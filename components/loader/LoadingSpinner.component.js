@@ -16,9 +16,9 @@ export default function LoadingSpinner() {
       <Loader
         type="TailSpin"
         color="#121212"
-        height="50%"
-        width="50%"
-        timeout={30000} //3 secs
+        height="75%"
+        width="75%"
+        timeout={30000}
       />
     </SpinnerContainer>
   );
