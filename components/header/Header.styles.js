@@ -3,7 +3,7 @@ import { ShoppingBag } from "@styled-icons/heroicons-outline/ShoppingBag";
 import { Menu } from "@styled-icons/feather/Menu";
 
 export const StyledHeader = styled.header`
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 56px;
   left: 0px;

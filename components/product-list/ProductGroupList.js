@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import LoadingSpinner from "../loader/LoadingSpinner.component";
+import ProductGroup from "../product-group/ProductGroup";
 
-function ProductList() {
+function ProductGroupList() {
   const [productGroups, setProductGroups] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -13,7 +14,7 @@ function ProductList() {
       .then((res) => res.json())
       .then((data) => {
         setError(false);
-        setProductGroups((prevState) => [...prevState, ...data.aisle.groups]);
+        setProductGroups(data.aisle.groups);
       })
       .catch(() => {
         setError(true);
@@ -26,7 +27,7 @@ function ProductList() {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log("from where I need em: ", productGroups);
+
   if (error) {
     return <error>Something went wrong!</error>;
   }
@@ -34,10 +35,22 @@ function ProductList() {
     return <LoadingSpinner />;
   }
   return (
-    <div>
-      <p>Product List commin in hot</p>
-    </div>
+    <>
+      {productGroups.map((productGroup) => {
+        {
+          /* console.log("dhfadha: ", productGroup)
+        return (
+          <ProductGroup key={productGroup.id} productGroup={productGroup} />
+        ); */
+        }
+        if (productGroup.products.length > 0) {
+          return (
+            <ProductGroup key={productGroup.id} productGroup={productGroup} />
+          );
+        }
+      })}
+    </>
   );
 }
 
-export default ProductList;
+export default ProductGroupList;

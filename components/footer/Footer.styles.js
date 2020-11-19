@@ -7,7 +7,7 @@ import { Envelope } from "@styled-icons/zondicons/Envelope";
 import { Link } from "@styled-icons/heroicons-outline/Link";
 
 export const StyledFooter = styled.footer`
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 146px;
   left: 0px;
