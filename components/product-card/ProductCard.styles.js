@@ -11,7 +11,12 @@ export const Article = styled.article`
   flex-flow: column nowrap;
 
   img {
-    width: 100%;
+    /* width: 100%; */
+    height: 126px;
+    width: 168px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
   }
 
   div {

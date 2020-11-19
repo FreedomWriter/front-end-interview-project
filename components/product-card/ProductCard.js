@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
   return (
     <Article>
       <img src={product.assets[0]["url"]} alt={product.title} />
-      <div>{product.title}</div>
+      <div title="Wine name">{product.title}</div>
       <p>{numFormat.format(amount)}</p>
     </Article>
   );

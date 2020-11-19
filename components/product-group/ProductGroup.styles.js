@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-flow: column nowrap;
   width: 60%;
   margin: 0 auto;
-  h3 {
+  h2 {
     margin: 2%;
   }
   @media (max-width: 768px) {

@@ -5,7 +5,7 @@ import { Section, Div } from "./ProductGroup.styles";
 export default function ProductGroup({ productGroup }) {
   return (
     <Section>
-      <h3>{productGroup.name}</h3>
+      <h2>{productGroup.name}</h2>
       <Div>
         {productGroup.products.map((product, idx) => {
           if (idx < 8) {

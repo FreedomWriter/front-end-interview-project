@@ -5,7 +5,10 @@ import { HeroSection, HeroImage, HeroText } from "./Hero.styles";
 export default function Hero() {
   return (
     <HeroSection>
-      <HeroImage src={require("../../assets/hero.jpg")} />
+      <HeroImage
+        src={require("../../assets/hero.jpg")}
+        alt="Frothy beer in a glass, with several beer options"
+      />
       <HeroText>
         <h1>Discover Aisle</h1>
         <p>

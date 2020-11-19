@@ -13,7 +13,7 @@ export const HeroSection = styled.section`
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     width: 100%;
-    margin: 56px 0 7.5%;
+    margin: 56px 0 5%;
   }
 `;
 

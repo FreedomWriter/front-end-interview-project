@@ -26,7 +26,7 @@ function ProductGroupList() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [productGroups]);
 
   if (error) {
     return <error>Something went wrong!</error>;
