@@ -7,6 +7,7 @@ test("Footer to be visible", () => {
   const { container } = render(<Footer />);
   expect(container).toBeVisible();
 });
+
 test("Icons to be visible", () => {
   const { getByTestId } = render(<Footer />);
   const linkIcon = getByTestId(/link-icon/i);
@@ -20,4 +21,13 @@ test("Icons to be visible", () => {
   expect(twitterIcon).toBeVisible();
   expect(facebookIcon).toBeVisible();
   expect(emailIcon).toBeVisible();
+});
+
+test("Links to be visible", () => {
+  const { getByText } = render(<Footer />);
+  const terms = getByText(/Terms of Services/i);
+  const privacy = getByText(/Privacy/i);
+
+  expect(terms).toBeVisible();
+  expect(privacy).toBeVisible();
 });
