@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
+import ProductList from "../components/product-list/ProductList";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <ProductList />
         {/* <p>
           Please take a look at the README before staring and feel free to reach
           out with any questions or concerns!

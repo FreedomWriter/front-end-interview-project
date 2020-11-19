@@ -34,7 +34,7 @@ export const LinkContainer = styled.div`
 export const Link = styled.a`
   color: #fff;
   text-decoration: none;
-  font-size: 0.7em;
+  font-size: 0.8em;
 `;
 
 export const Icon = styled(ShoppingBag)`
