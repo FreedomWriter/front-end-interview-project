@@ -17,7 +17,7 @@ export default function Header() {
         <Link>Contact Us</Link>
       </LinkContainer>
       <P>FOXTROT</P>
-      <Icon />
+      <Icon data-testid="shopping-icon" />
     </StyledHeader>
   );
 }

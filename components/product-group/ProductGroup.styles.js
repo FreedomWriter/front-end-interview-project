@@ -8,6 +8,10 @@ export const Section = styled.section`
   h2 {
     margin: 2%;
   }
+  p {
+    margin: 0 2% 2%;
+    cursor: pointer;
+  }
   @media (max-width: 768px) {
     width: 90%;
     h3 {
