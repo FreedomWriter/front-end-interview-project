@@ -15,6 +15,11 @@ export const HeroSection = styled.section`
     width: 100%;
     margin: 56px 0 5%;
   }
+  /* contains hero header and text  */
+  div {
+    max-width: 100%;
+    padding: 5%;
+  }
 `;
 
 export const HeroImage = styled.img`
@@ -22,9 +27,4 @@ export const HeroImage = styled.img`
   width: 387px;
   height: 185px;
   align-self: center;
-`;
-
-export const HeroText = styled.div`
-  max-width: 100%;
-  padding: 5%;
 `;

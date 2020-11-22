@@ -18,19 +18,29 @@ export const StyledFooter = styled.footer`
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-`;
 
-// containers
-export const LinkContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 15%;
-  @media (max-width: 768px) {
-    width: 60%;
+  /* link container */
+  div {
+    display: flex;
     justify-content: space-evenly;
+    width: 15%;
+    @media (max-width: 768px) {
+      width: 60%;
+      justify-content: space-evenly;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.7em;
+      @media (max-width: 768px) {
+        font-size: 0.5em;
+      }
+    }
   }
 `;
 
+// container
 export const IconContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
@@ -39,16 +49,6 @@ export const IconContainer = styled.div`
   @media (max-width: 768px) {
     width: 60%;
     margin: 5% auto;
-  }
-`;
-
-// link
-export const StyledLink = styled.a`
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.7em;
-  @media (max-width: 768px) {
-    font-size: 0.5em;
   }
 `;
 

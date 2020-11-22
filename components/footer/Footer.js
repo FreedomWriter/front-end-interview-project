@@ -7,8 +7,6 @@ import {
   TwitterIcon,
   FacebookIcon,
   EmailIcon,
-  LinkContainer,
-  StyledLink,
 } from "./Footer.styles";
 
 export default function Footer() {
@@ -21,10 +19,10 @@ export default function Footer() {
         <FacebookIcon data-testid="facebook-icon" />
         <EmailIcon data-testid="email-icon" />
       </IconContainer>
-      <LinkContainer>
-        <StyledLink>Terms of Services</StyledLink>
-        <StyledLink>Privacy</StyledLink>
-      </LinkContainer>
+      <div>
+        <a>Terms of Services</a>
+        <a>Privacy</a>
+      </div>
     </StyledFooter>
   );
 }
