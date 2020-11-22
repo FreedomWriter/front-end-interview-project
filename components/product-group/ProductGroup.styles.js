@@ -12,21 +12,21 @@ export const Section = styled.section`
     margin: 0 2% 2%;
     cursor: pointer;
   }
+
+  div {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    @media (max-width: 768px) {
+      height: 100%;
+    }
+  }
   @media (max-width: 768px) {
     width: 90%;
     h3 {
       margin: 5%;
     }
-  }
-`;
-
-export const Div = styled.div`
-  display: flex;
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
-  flex-flow: row wrap;
-  @media (max-width: 768px) {
-    height: 100%;
   }
 `;
