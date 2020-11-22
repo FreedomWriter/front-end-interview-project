@@ -23,7 +23,7 @@ export const StyledHeader = styled.header`
     letter-spacing: 5px;
   }
 
-  div {
+  nav {
     display: flex;
     justify-content: space-evenly;
     width: 15%;

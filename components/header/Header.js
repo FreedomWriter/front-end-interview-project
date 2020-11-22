@@ -5,10 +5,10 @@ export default function Header() {
   return (
     <StyledHeader>
       <Hamburger />
-      <div>
+      <nav>
         <a>Stores</a>
         <a>Contact Us</a>
-      </div>
+      </nav>
       <p>FOXTROT</p>
       <Icon data-testid="shopping-icon" />
     </StyledHeader>
