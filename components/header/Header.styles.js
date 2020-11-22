@@ -13,30 +13,30 @@ export const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`;
 
-export const P = styled.p`
-  margin: 0 auto;
-  width: 100%;
-  text-align: center;
-  font-size: 1.75em;
-  font-weight: bold;
-  letter-spacing: 5px;
-`;
-
-export const LinkContainer = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 15%;
-  @media (max-width: 768px) {
-    display: none;
+  p {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1.75em;
+    font-weight: bold;
+    letter-spacing: 5px;
   }
-`;
 
-export const Link = styled.a`
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.8em;
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
 `;
 
 export const Icon = styled(ShoppingBag)`

@@ -1,22 +1,15 @@
 import React from "react";
-import {
-  StyledHeader,
-  P,
-  Hamburger,
-  Icon,
-  LinkContainer,
-  Link,
-} from "./Header.styles";
+import { StyledHeader, Hamburger, Icon } from "./Header.styles";
 
 export default function Header() {
   return (
     <StyledHeader>
       <Hamburger />
-      <LinkContainer>
-        <Link>Stores</Link>
-        <Link>Contact Us</Link>
-      </LinkContainer>
-      <P>FOXTROT</P>
+      <div>
+        <a>Stores</a>
+        <a>Contact Us</a>
+      </div>
+      <p>FOXTROT</p>
       <Icon data-testid="shopping-icon" />
     </StyledHeader>
   );
